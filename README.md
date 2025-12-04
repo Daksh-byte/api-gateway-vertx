@@ -139,4 +139,3 @@ The application provides console logging for:
 - External API calls
 - Circuit breaker state changes
 - Error conditions
-
