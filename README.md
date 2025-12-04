@@ -2,18 +2,34 @@
 
 A lightweight API Gateway built with Eclipse Vert.x that aggregates data from multiple external APIs with circuit breaker pattern for resilience.
 
+Approach :
+Built using Vert.x to create a lightweight API Gateway.
+
+Created an HTTP server with endpoints /aggregate and /health.
+
+Used WebClient to call two external APIs (posts & users).
+
+Executed both API calls asynchronously in parallel using CompositeFuture.
+
+Combined the responses (post title + author name) into a single JSON output.
+
+Returned proper error responses when external calls failed.
+
+Project kept simple, clean, and non-blocking to maintain high performance.
+
 ## Features
 
-- **Data Aggregation**: Combines data from JSONPlaceholder APIs (posts and users)
-- **Circuit Breaker**: Fault tolerance with automatic failure detection and recovery
-- **Health Check**: Built-in health monitoring endpoint
-- **Async Processing**: Non-blocking I/O with Vert.x reactive architecture
-- **Comprehensive Testing**: JUnit 5 integration tests
+- Data Aggregation: Combines data from JSONPlaceholder APIs (posts and users)
+- Circuit Breaker: Fault tolerance with automatic failure detection and recovery
+- Health Check: Built-in health monitoring endpoint
+- Async Processing: Non-blocking I/O with Vert.x reactive architecture
+- Comprehensive Testing: JUnit 5 integration tests
 
 ## Prerequisites
 
 - Java 11 or higher
 - Maven 3.6+
+- Vert.x Core & Web Dependencies
 
 ## Quick Start
 
