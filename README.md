@@ -21,7 +21,7 @@ A lightweight API Gateway built with Eclipse Vert.x that aggregates data from mu
 
 ```bash
 git clone <repository-url>
-cd APIGatewayVertx
+cd api-gateway-vertx
 mvn clean compile
 ```
 
