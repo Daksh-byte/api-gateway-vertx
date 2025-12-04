@@ -19,7 +19,7 @@ public class ApiGatewayVerticle extends AbstractVerticle {
     private WebClient webClient;
     private CircuitBreaker circuitBreaker;
 
-    // ADD THIS MAIN METHOD
+
     public static void main(String[] args) {
         Vertx vertx = Vertx.vertx();
         vertx.deployVerticle(new ApiGatewayVerticle())
@@ -29,7 +29,7 @@ public class ApiGatewayVerticle extends AbstractVerticle {
 
     @Override
     public void start(Promise<Void> startPromise) {
-        // ... rest of your code stays the same
+
         WebClientOptions options = new WebClientOptions()
                 .setConnectTimeout(5000)
                 .setIdleTimeout(10000);
