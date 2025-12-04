@@ -1,0 +1,8 @@
+### Test Health Endpoint
+GET http://localhost:8080/health
+
+### Test Aggregate Endpoint
+GET http://localhost:8080/aggregate
+
+### Test 404
+GET http://localhost:8080/undefined
